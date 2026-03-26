@@ -1,0 +1,59 @@
+<!-- panel.html
+     This file is used as a template that content.js injects into Gmail's DOM.
+     It's NOT opened as a normal web page. -->
+
+<div id="clearview-panel">
+  <!-- Header -->
+  <div class="cv-header">
+    <div class="cv-logo">🛡️ ClearView</div>
+    <div class="cv-badge" id="cv-total-count">0 emails flagged</div>
+    <button class="cv-close" id="cv-close-btn">✕</button>
+  </div>
+
+  <!-- Three collapsible sections -->
+
+  <!-- OTP Section -->
+  <div class="cv-section" id="cv-otp-section">
+    <div class="cv-section-header" data-cv-toggle="cv-otp-list" data-cv-chevron="cv-otp-chevron">
+      <span>🔑 OTP Emails</span>
+      <span class="cv-count-pill" id="cv-otp-count">0</span>
+      <span class="cv-chevron" id="cv-otp-chevron">▾</span>
+    </div>
+    <div class="cv-section-body" id="cv-otp-list"></div>
+  </div>
+
+  <!-- Payment Section -->
+  <div class="cv-section" id="cv-payment-section">
+    <div class="cv-section-header" data-cv-toggle="cv-payment-list" data-cv-chevron="cv-payment-chevron">
+      <span>💳 Payment Emails</span>
+      <span class="cv-count-pill" id="cv-payment-count">0</span>
+      <span class="cv-chevron" id="cv-payment-chevron">▾</span>
+    </div>
+    <div class="cv-section-body" id="cv-payment-list"></div>
+  </div>
+
+  <!-- Junk Section -->
+  <div class="cv-section" id="cv-junk-section">
+    <div class="cv-section-header" data-cv-toggle="cv-junk-list" data-cv-chevron="cv-junk-chevron">
+      <span>🗑️ Junk Senders</span>
+      <span class="cv-count-pill" id="cv-junk-count">0</span>
+      <span class="cv-chevron" id="cv-junk-chevron">▾</span>
+    </div>
+    <div class="cv-section-body" id="cv-junk-list"></div>
+  </div>
+
+  <!-- Footer Actions -->
+  <div class="cv-footer">
+    <label class="cv-select-all">
+      <input type="checkbox" id="cv-select-all" /> Select all
+    </label>
+    <button class="cv-btn-archive" id="cv-archive-btn">Archive All</button>
+    <button class="cv-btn-delete" id="cv-delete-btn">Delete All</button>
+  </div>
+</div>
+
+<!-- Empty State (shown when nothing detected) -->
+<div id="clearview-empty" style="display:none">
+  <span>✓ Your inbox looks clear</span>
+</div>
+
