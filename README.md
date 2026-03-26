@@ -2,11 +2,8 @@
 
 **Stop missing what matters.** Surface OTPs, payments, and junk senders buried in your Gmail inbox — automatically.
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/mv3/)
-[![Built with Cursor](https://img.shields.io/badge/Built%20with-Cursor%20AI-000000?logoColor=white)](https://cursor.com)
 
-*MIT License · Chrome Extension · Built with Cursor AI*
 
 <!-- SCREENSHOT -->
 
